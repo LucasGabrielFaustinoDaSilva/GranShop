@@ -1,0 +1,52 @@
+Como eu fiz meu projeto GranShopAPI:
+
+Criei o projeto
+
+Abri o terminal e digitei:
+dotnet new webapi -o GranShopAPI
+
+Entrei na pasta do projeto:
+cd GranShopAPI
+
+Instalei o que precisava
+
+Pacote para documentação:
+dotnet add package Swashbuckle.AspNetCore
+
+Pacotes para o banco de dados:
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package MySQL.EntityFrameworkCore
+
+Configurei o banco
+
+Editei o arquivo appsettings.json:
+Coloquei minha conexão com o MySQL
+server=localhost; database=gran_shop; user=root; password=''
+
+Criei as pastas
+
+Models: para as classes Categoria e Produto
+
+Data: para o AppDbContext
+
+Controllers: para os controllers
+
+Classes principais
+
+Categoria tem Id e Nome
+
+Produto tem Id, Nome, Valor e outras informações
+
+Para rodar
+
+Uso sempre:
+dotnet watch run
+
+Testo no navegador:
+http://localhost:5031/swagger
+
+Dicas que aprendi:
+
+Sempre iniciar o MySQL antes
+
+Verificar os erros no terminal
