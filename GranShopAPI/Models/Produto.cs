@@ -18,15 +18,15 @@ public class Produto
     public string Descricao { get; set; }
 
     [Required]
-    [Range(0, int.MaxValue)]
-    [StringLength(100)]
     public int Estoque { get; set; }
 
-    [Required]
-    
-    
+    [Required] 
     public decimal ValorCusto { get; set; }
+
+    [Required]
     public decimal ValorVenda { get; set; }
+
+    [Required]
     public bool Destaque { get; set; }
 
     [Required]
